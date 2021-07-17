@@ -1,4 +1,7 @@
 library(tidyverse)
+library(dplyr)
+library(ggplot2)
+
 load("rdas/murders.rda")
 
 murders %>% mutate(abb = reorder(abb, rate)) %>%
