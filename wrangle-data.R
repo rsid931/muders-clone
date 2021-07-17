@@ -1,3 +1,8 @@
+install.packages ("tidyverse", dependencies = TRUE)
+installed.packages("stringi") 
+
+
+
 library(tidyverse)
 murders <- read_csv("data/murders.csv")
 murders <-murders %>% mutate(region = factor(region),
